@@ -48,5 +48,5 @@ jobs:
       run: |
         pytest
     - name: Upload coverage to Codecov
-      if: github.event_name == 'push' && matrix.os == 'ubuntu-latest'
+      if: matrix.os == 'ubuntu-latest'
       uses: codecov/codecov-action@v1
